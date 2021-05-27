@@ -44,9 +44,9 @@ export default class GameScene extends Phaser.Scene {
   spin() {
     this.refresh();
 
-    this.middleRowIndexes = [3, 1, 1, 3, 3]; // predefine middle indexes
+    //this.middleRowIndexes = [3, 1, 1, 3, 3]; // predefine middle indexes
     // or
-    // this.drawMiddleRow(); // draw middle indexes
+    this.drawMiddleRow(); // draw middle indexes
 
     for (let i = 0; i < 5; i++) {
       this.initSlotAnimation(this.itemsSlots[i]);
